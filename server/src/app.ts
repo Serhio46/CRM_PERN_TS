@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import http from 'http';
+import connectToSequelizeDB from './db/connect';
 
 const app = express();
 dotenv.config();
@@ -11,7 +12,8 @@ const startServer = async () => {
    const PORT = (process.env.PORT as string) || 5000;
 
    try {
-      //await connect();
+      await connectToSequelizeDB.authenticate();
+      await connectToSequelizeDB.sync();
       server.listen(PORT, () => {
          console.log(`Server has started on port: ${PORT} `);
       });
