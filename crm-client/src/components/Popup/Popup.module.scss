@@ -1,0 +1,37 @@
+@import '../../sass/src/abstracts/index';
+
+.popupBackground {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+   background: $modal-bg;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   scale: 0;
+   transition: 1s;
+   &.is-active {
+      scale: 1;
+   }
+}
+
+.popupContent {
+   height: 90%;
+   width: 600px;
+   background: $body-bg-color;
+   border-radius: 10px 10px 0 0;
+}
+.popupHeader {
+   padding: 10px;
+   height: 50px;
+   background: $body-text-color;
+   color: $body-bg-color;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 10px 10px 0 0;
+   font-weight: $h3-font-weight;
+}

@@ -1,0 +1,19 @@
+@import '../abstracts/index'; //@include gaps($prop1: 'padding-top', $parent-name: '.#{$prefix-util}padding-top', $is-important: true);
+
+@each $size, $value in $spacings {
+   .ds-padding-#{$size} {
+      padding: $value;
+   }
+   .ds-padding-top-#{$size} {
+      padding-top: $value;
+   }
+   .ds-padding-bottom-#{$size} {
+      padding-bottom: $value;
+   }
+   .ds-padding-right-#{$size} {
+      padding-right: $value;
+   }
+   .ds-padding-left-#{$size} {
+      padding-left: $value;
+   }
+}

@@ -1,0 +1,30 @@
+/*=============================================
+=            Global text color            =
+=============================================*/
+$body-text-color: var(--ds-body-text-color, $color-primary) !default;
+$body-bg-color: var(--ds-body-bg-color, $color-body-bg) !default;
+
+/*=====  End of  Global text color   ======*/
+
+/*=============================================
+=               Button colors              =
+=============================================*/
+
+/* Primary */
+$btn-primary-color: var(--ds-btn-primary-color, $color-body-bg) !default;
+$btn-primary-bg: var(--ds-btn-primary-bg, $color-primary) !default;
+$btn-primary-bg-hover: var(--ds-btn-primary-bg-hover, green-light) !default;
+
+/* Secondary */
+
+/* Disabled */
+
+/*=====  End of  Button colors   ======*/
+
+/*=============================================
+=               Form colors              =
+=============================================*/
+$modal-bg: var(--ds-modal-bg, $color-modal-bg) !default;
+/*=============================================
+=               Input colors              =
+=============================================*/

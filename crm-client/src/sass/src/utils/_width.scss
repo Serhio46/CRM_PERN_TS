@@ -1,0 +1,25 @@
+@import '../abstracts/index';
+
+.ds-width- {
+   &fit {
+      max-width: 100% !important;
+   }
+   &half {
+      width: 50% !important;
+   }
+   &full {
+      width: 100% !important;
+   }
+   &width-auto {
+      width: auto !important;
+   }
+   &width-none {
+      width: 0 !important;
+   }
+   &min-width-none {
+      min-width: 0 !important;
+   }
+   &max-width-0 {
+      max-width: 0;
+   }
+}

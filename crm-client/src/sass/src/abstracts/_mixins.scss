@@ -1,0 +1,10 @@
+@import './variables';
+@mixin gaps($prop1, $parent-name, $prop2: null, $child-name: null, $is-important: false) {
+   #{$parent-name}-xxxs {
+      @include gap($prop1, $prop2, 0, $child-name, $is-important);
+   }
+}
+
+@mixin gap($prop, $spacing) {
+   #{$prop}: map-get($spacings, $spacing);
+}
