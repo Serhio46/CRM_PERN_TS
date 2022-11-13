@@ -8,7 +8,7 @@ const app = express();
 dotenv.config();
 const server = http.createServer(app);
 
-const startServer = async () => {
+const startServer = async (): Promise<void> => {
    const PORT = (process.env.PORT as string) || 5000;
 
    try {
