@@ -2,18 +2,18 @@
 
 @each $size, $value in $spacings {
    .ds-padding-#{$size} {
-      padding: $value;
+      padding: $value !important;
    }
    .ds-padding-top-#{$size} {
-      padding-top: $value;
+      padding-top: $value !important;
    }
    .ds-padding-bottom-#{$size} {
-      padding-bottom: $value;
+      padding-bottom: $value !important;
    }
    .ds-padding-right-#{$size} {
-      padding-right: $value;
+      padding-right: $value !important;
    }
    .ds-padding-left-#{$size} {
-      padding-left: $value;
+      padding-left: $value !important;
    }
 }

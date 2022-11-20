@@ -8,7 +8,7 @@ import PopupContent from './PopupContent';
 
 const PORTAL_CLASS_NAME = 'popup-modal';
 
-const Popup: FC<PopupTypes> = ({ children, isOpen, closeHandler, ...otherProps }) => {
+const Popup: FC<PopupTypes> = ({ headerText, children, isOpen, closeHandler, ...otherProps }) => {
    //const [isActive, setIsActive] = useState<boolean>(false);
    const element = useMemo(() => {
       const el = document.createElement('div');
@@ -32,7 +32,7 @@ const Popup: FC<PopupTypes> = ({ children, isOpen, closeHandler, ...otherProps }
             })}
             onClick={closeHandler}
          >
-            <PopupContent {...otherProps} onCloseModal={closeHandler} headerText="Login">
+            <PopupContent isOpen {...otherProps} onCloseModal={closeHandler} headerText="Login">
                {children}
             </PopupContent>
          </div>

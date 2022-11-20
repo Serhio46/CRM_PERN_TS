@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode, useState, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import classnames from 'classnames';
 
@@ -11,9 +11,17 @@ interface ContentProps {
 }
 
 const PopupContent: FC<ContentProps> = ({ children, headerText, onCloseModal, contentClassName }) => {
+   const [isActive, setIaActive] = useState<boolean>(false);
+
+   useEffect(() => {
+      setTimeout(() => setIaActive(true), 0);
+   }, []);
+
    return (
       <div
-         className={classnames(styles.popupContent, contentClassName)}
+         className={classnames(styles.popupContent, contentClassName, {
+            [styles['is-active']]: isActive,
+         })}
          onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
          <div className={styles.popupHeader}>

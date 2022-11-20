@@ -11,11 +11,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   scale: 0;
-   transition: 1s;
-   &.is-active {
-      scale: 1;
-   }
 }
 
 .popupContent {
@@ -23,6 +18,11 @@
    width: 600px;
    background: $body-bg-color;
    border-radius: 10px 10px 0 0;
+   transform: scale(0.5);
+   transition: 0.5s all;
+   &.is-active {
+      transform: scale(1);
+   }
 }
 .popupHeader {
    padding: 10px;
