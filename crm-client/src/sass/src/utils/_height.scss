@@ -1,0 +1,37 @@
+.ds- {
+   &height-full {
+      height: 100% !important;
+   }
+   &height-fixed {
+      overflow: auto;
+   }
+   &height-inherit {
+      height: inherit;
+   }
+
+   &max-height-full {
+      max-height: 100%;
+   }
+
+   &max-height-inherit {
+      max-height: inherit;
+   }
+
+   &height-auto {
+      height: auto;
+   }
+
+   // used to fix Firefox flexbox bug
+   &min-height-none,
+   &min-height-0 {
+      min-height: 0;
+   }
+
+   &min-height-auto {
+      min-height: auto;
+   }
+
+   &height-half {
+      height: 50% !important;
+   }
+}

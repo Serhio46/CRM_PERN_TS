@@ -32,7 +32,7 @@ const Popup: FC<PopupTypes> = ({ headerText, children, isOpen, closeHandler, ...
             })}
             onClick={closeHandler}
          >
-            <PopupContent isOpen {...otherProps} onCloseModal={closeHandler} headerText="Login">
+            <PopupContent {...otherProps} onCloseModal={closeHandler} headerText="Login">
                {children}
             </PopupContent>
          </div>

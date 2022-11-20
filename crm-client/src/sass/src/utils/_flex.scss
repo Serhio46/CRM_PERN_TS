@@ -1,0 +1,19 @@
+.ds-flex {
+   display: flex;
+   @each $prop in row, row-reverse, column, column-reverse {
+      &-direction-#{$prop} {
+         flex-direction: $prop;
+      }
+   }
+   @each $prop in flex-start, flex-end, center, space-between, space-around, space-evenly {
+      &-justify-#{$prop} {
+         justify-content: $prop;
+      }
+   }
+
+   @each $prop in flex-start, flex-end, center, baseline, stretch {
+      &-align-#{$prop} {
+         align-items: $prop;
+      }
+   }
+}

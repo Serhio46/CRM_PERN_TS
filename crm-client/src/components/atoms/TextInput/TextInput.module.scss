@@ -1,0 +1,10 @@
+@import '../../../sass/src/abstracts/index';
+
+.input {
+   width: 100%;
+   margin: 3px;
+   border: transparent;
+   flex-grow: 1;
+   font-size: $fs-base;
+   @include gap('padding-left', 'xxxs');
+}
