@@ -8,3 +8,38 @@
    font-size: $fs-base;
    @include gap('padding-left', 'xxxs');
 }
+
+.wrapper {
+   display: flex;
+   height: 2.5em;
+   width: 100%;
+   align-items: center;
+   box-shadow: inset 0px 0px 2px $color-secondary, inset 0px 2px 3px $color-secondary;
+   box-sizing: border-box;
+   border-radius: 4px;
+   background: white;
+   color: $color-secondary;
+   &--focused {
+      outline: 2px solid $color-primary !important; // DEVNOTE: override global project styles
+   }
+
+   /*   &--disabled {
+      background: $palette-ui-100;
+   } */
+
+   &--error {
+      outline: 1px solid $color-notification-error !important; // DEVNOTE: override global project styles
+
+      &.wrapper--focused {
+         outline: 2px solid $color-notification-error !important; // DEVNOTE: override global project styles
+      }
+   }
+
+   &--valid {
+      outline: 1px solid $color-notification-success !important; // DEVNOTE: override global project styles
+
+      &.wrapper--focused {
+         outline: 2px solid $color-notification-success !important; // DEVNOTE: override global project styles
+      }
+   }
+}

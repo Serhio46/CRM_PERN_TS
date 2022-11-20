@@ -27,9 +27,19 @@ const LoginForm: FC<LoginForm> = ({ isOpen, closeHandler }) => {
          headerText={'Login'}
       >
          <form onSubmit={handleSubmit}>
-            <div className="ds-flex ds-flex-align-center ds-padding-top-xs ds-flex-direction-column">
-               <TextInput />
-               <TextInput />
+            <div className="ds-flex ds-flex-align-center ds-padding-top-md ds-flex-direction-column ds-padding-left-md ds-padding-right-md">
+               <TextInput
+                  className=""
+                  state={'default'}
+                  type={'text'}
+                  placeholder={'Insert you email'}
+               />
+               <TextInput
+                  className="ds-margin-top-md ds-margin-bottom-md"
+                  state={'default'}
+                  type={'password'}
+                  placeholder={'Insert you password'}
+               />
                <Button type="submit" value={'Login'} />
                Forgot your password?
             </div>

@@ -14,9 +14,16 @@ $color-body-bg: #e5e7ef;
 $color-modal-bg: rgba(0, 0, 0, 0.5);
 
 //Utility
+//Error
 $color-notification-error: #fd2044;
 $color-focus-error-shadow: lighten($color-notification-error, 20%);
 $color-focus-error-border: darken($color-notification-error, 10%);
+//success
+$color-notification-success: green;
+$color-focus-success-shadow: darken($color-notification-error, 20%);
+$color-focus-success-border: darken($color-notification-error, 10%);
+//focus
+$color-focus: blue;
 
 $color-scroll-light: #c2c7cc;
 $color-scroll-dark: #54606b;
